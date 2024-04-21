@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  desktop:
+    image: "dorowu/ubuntu-desktop-lxde-vnc"
+    tty: true
+    ports:
+      - "8080:80"
+
+  voice:
+    image: "voicevox/voicevox_engine:cpu-ubuntu20.04-latest"
+    ports:
+      - "50021:50021"
